@@ -1,0 +1,49 @@
+div.app {
+  font-family: 'Gill Sans', sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1, p, section.results {
+  flex:0 90%;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+}
+
+form {
+  flex: 0 50%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+}
+
+form label {
+  flex: 0 30%;
+}
+
+form input {
+  flex: 0 69%;
+}
+
+form button {
+  flex: 0 80%;
+}
+
