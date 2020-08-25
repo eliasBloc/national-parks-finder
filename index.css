@@ -1,49 +1,126 @@
+* {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/*
+primary: color: #354352;
+
+complimentary: #524435;
+
+analogous: #355252;
+analogous: #353552;
+
+triadic: #443552;
+triadic: #523543;
+*/
+
+body {
+  background-color: #7a8692;
+}
+
 div.app {
-  font-family: 'Gill Sans', sans-serif;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2vh 4vh;
+  
 }
 
-h1, p, section.results {
-  flex:0 90%;
+h1, h2, h3 {
+  color: #524435;
+  font-family: 'Nunito', sans-serif;
+  flex: 60%;
+  text-align: inherit;
 }
 
-button, input[type="text"] {
+h2#loading-page {
+  color: #523543;
+  border: none;
+}
+
+p, span {
+  color: #355252;
+  text-align: inherit;
+}
+
+section#results {
+  flex:0 100%;
+}
+
+button, input[type="text"], input[type="number"] {
   padding: 5px;
+}
+
+button {
+  color: #353552;
 }
 
 button:hover {
   cursor: pointer;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
+  color: #443552;
 }
 
 .error-message {
   color: red;
 }
 
-form {
+div#img-div {
   flex: 0 50%;
+}
+
+img {
+  width: 100%;
+
+}
+
+form {
+  flex: 0 90%;
   display: flex;
   flex-flow: row wrap;
   text-align: left;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 
 form label {
-  flex: 0 30%;
+  flex: 0 38%;
 }
 
 form input {
-  flex: 0 69%;
+  flex: 0 30%;
+  margin-left: 1vh;
 }
 
 form button {
   flex: 0 80%;
 }
 
+ul {
+  list-style-type: decimal;
+  text-align: left;
+  color: #523543;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.17em;
+}
+
+a:link    { color: #353552; }
+a:visited { color: #523543; }
+a:hover   { color: #443552; }
+a:active  { color: #524435; }
+
+h2 {
+  border-bottom: 2px solid #523543;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  flex: 0 100%;
+  text-align: right;
+  margin-top: 3vh;
+}

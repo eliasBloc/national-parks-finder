@@ -4,29 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search for National Parks</title>
-  <link type="text/css" href="https://getbootstrap.com/1.0.0/assets/css/bootstrap-1.0.0.min.css">
-  <link type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link type="text/css" href="index.css" rel="stylesheet">
 </head>
 <body>
   <div class='app'>
     <h1>National Parks Finder</h1>
-
+    <p>There are many things worth exploring in nature. Find yours.</p>
+    <div id="img-div"><img src="background-img.jpg" /></div>
     <form id="js-form">
-      <label for="search-term">state code(s)</label>
+      <label for="search-term">State code(s):</label>
       <input type="text" name="search-term" id="js-search-term" required>
 
-      <label for="max-results">Maximum results to return</label>
+      <label for="park-code">Park code(s):</label>
+      <input type="text" name="park-code" id="js-park-code" >
+
+      <label for="max-results">Limit results:</label>
       <input type="number" name="max-results" id="js-max-results" placeholder="10">
 
-      <button type="submit"> value="Go!"</button>
+      <button type="submit">Find</button>
     </form>
-
+    <h2 id="loading-screen" class="hidden"><i>...loading results</i></h2>
     <p id="js-error-message" class="error-message"></p>
     <section id="results" class="hidden">
-      <h2>Search results</h2>
+      <h2>Search Results</h2>
       <ul id="results-list">
       </ul>
     </section>
+    <footer><span>Photo by <a href="https://unsplash.com/@dexezekiel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dex Ezekiel</a> on <a href="https://unsplash.com/s/photos/national-parks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><span>Favicon Photo by <a href="https://unsplash.com/@jxb511?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John Bakator</a> on <a href="https://unsplash.com/s/photos/national-parks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><p>Copyright 2020 <a href="https://eliasbloc.github.io/devProfile/">J.E.M.</a></p></footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
